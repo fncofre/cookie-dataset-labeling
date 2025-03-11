@@ -1,5 +1,10 @@
 # Cookie Dataset Labeling
 
+# Table of Contents
+- [Environment Setup](#environment-setup)
+- [Download Cookies Screenshots](#download-cookies-screenshots)
+- [Label-studio usage](#label-studio-usage)
+
 ## Environment Setup
 1.- Install Homebrew (a package manager for macOS):
 This command installs Homebrew, which allows you to easily manage software on macOS.
@@ -44,3 +49,12 @@ label-studio --version
 ```
 label-studio start
 ```
+
+## Download Cookies Screenshots
+
+...
+
+## Label-studio usage
+
+...
+
