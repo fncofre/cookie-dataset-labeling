@@ -9,6 +9,7 @@
 ```
 💡 NOTES:
  - (MAC intended guide, can be easily adaped to another OS)
+ - Open your "terminal" to insert all the commands below.
 ```
 
 1.- Install Homebrew (a package manager for macOS):
