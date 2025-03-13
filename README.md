@@ -4,6 +4,10 @@
 - [Environment Setup](#environment-setup)
 - [Download Cookies Screenshots](#download-cookies-screenshots)
 - [Label-studio usage](#label-studio-usage)
+  - [Initiliaze Label Studio](#initiliaze-label-studio)
+  - [Start labeling images](#start-labeling-images)
+  - [Export the labeled images](#export-the-labeled-images)
+
 
 ## Environment Setup
 ```
@@ -149,7 +153,7 @@ The data lake of images w/ and w/o cookies, are divided in 5 different zips: (pw
  - 😊 Any question just ask!
 ```
 
-### Export the labeled images.
+### Export the labeled images
 - When you finish labeling all the images, go to the project menu (click your project name).
 - Click the `Export` button, and select `YOLO with Images` and click `Export` again.
 
