@@ -76,8 +76,6 @@ The data lake of images w/ and w/o cookies, are divided in 5 different zips: (pw
 
 - [Datalake 5 - 7675-9935](https://drive.google.com/file/d/1ZDOym79G6voT0af1ATiXgK0EnhnExvZN/view?usp=drive_link)
 
-...
-
 ## Label-studio usage
 
 ### Initiliaze Label Studio
