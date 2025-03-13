@@ -7,6 +7,7 @@
   - [Initiliaze Label Studio](#initiliaze-label-studio)
   - [Start labeling images](#start-labeling-images)
   - [Export the labeled images](#export-the-labeled-images)
+  - [Labeling video example](#labeling-video-example)
 
 
 ## Environment Setup
@@ -165,3 +166,8 @@ The data lake of images w/ and w/o cookies, are divided in 5 different zips: (pw
 </details>
 
 - This will download a `.zip` file, save it and wait for the instructions to send it.
+
+### Labeling video example
+
+https://github.com/user-attachments/assets/6143bcd3-ded5-490b-8bd3-4beb394bbb15
+
