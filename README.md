@@ -6,6 +6,11 @@
 - [Label-studio usage](#label-studio-usage)
 
 ## Environment Setup
+```
+💡 NOTES:
+ - (MAC intended guide, can be easily adaped to another OS)
+```
+
 1.- Install Homebrew (a package manager for macOS):
 This command installs Homebrew, which allows you to easily manage software on macOS.
 ```
@@ -45,12 +50,29 @@ pip install label-studio
 label-studio --version
 ```
 
-8.- Start Label Studio:
+8.- Edit env variables to allow bigger images, and a larger number of images:
+```
+export DATA_UPLOAD_MAX_MEMORY_SIZE=524288000
+export DATA_UPLOAD_MAX_NUMBER_FILES=5000
+```
+
+9.- Start Label Studio:
 ```
 label-studio start
 ```
 
 ## Download Cookies Screenshots
+The data lake of images w/ and w/o cookies, are divided in 5 different zips: (pw hint: project name, source of the images)
+
+- [Datalake 1 - 0000-1917](https://drive.google.com/file/d/1-SmvTcPOPWJn-4P5eVEQgk2gfRZaNU1S/view?usp=drive_link)
+
+- [Datalake 2 - 1918-3836](https://drive.google.com/file/d/1cd1H7AWRIJjhvC1vm9aRkNmQiaf__5fJ/view?usp=drive_link)
+
+- [Datalake 3 - 3837-5755](https://drive.google.com/file/d/1jOHC81vIcPTAuhLJIopVBfMjSC8NHr-M/view?usp=drive_link)
+
+- [Datalake 4 - 5756-7674](https://drive.google.com/file/d/10EWIsN16BHswO7P5qs7PdwxHWnYOglYz/view?usp=drive_link)
+
+- [Datalake 5 - 7675-9935](https://drive.google.com/file/d/1ZDOym79G6voT0af1ATiXgK0EnhnExvZN/view?usp=drive_link)
 
 ...
 
