@@ -51,18 +51,14 @@ This installs Label Studio, a tool for labeling data (used to label cookies scre
 pip install label-studio
 ```
 
-7.- Verify the Installation:
-```
-label-studio --version
-```
-
-8.- Edit env variables to allow bigger images, and a larger number of images:
+7.- Edit env variables to allow bigger images, and a larger number of images:
 ```
 export DATA_UPLOAD_MAX_MEMORY_SIZE=524288000
 export DATA_UPLOAD_MAX_NUMBER_FILES=5000
+ulimit -n 50000
 ```
 
-9.- Start Label Studio:
+8.- Start Label Studio:
 ```
 label-studio start
 ```
