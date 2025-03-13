@@ -79,5 +79,85 @@ The data lake of images w/ and w/o cookies, are divided in 5 different zips: (pw
 
 ## Label-studio usage
 
-...
+### Initiliaze Label Studio
 
+- Now at your browser, after doing the step `Start Label Studio` you should see the Label studio webpage (if not, then just go to http://localhost:8080/). It will ask for an account, that can be created there (doesn't require any confirmation).
+- After this you will be in the main page of Label Studio. (http://localhost:8080/projects/)
+- Then you need to create a new project.
+- Set as name `datalake-1` (change the number, depending of your datalake used). Description, can be ommited.
+- Then at Data Import click `upload files`, and go to your images folder, and select all of them. (you can use `cmd + a` to select all).
+- After all the images are loaded, click the upper right button `Save`.
+- Now click the first image of the list and u will receive a pop up to set the labeling configuration, click `Go to setup`.
+- There u will have a text editor to write code, at the moment just have `<View></View>` delete it, and put the following code:
+```
+<View>
+  <Image name="image" value="$image" />
+  
+  <RectangleLabels name="label" toName="image">
+    <Label value="Accept Button" background="#34c759" />
+    <Label value="Cookie Popup" background="#ff9500" />
+  </RectangleLabels>
+</View>
+```
+- Finally click the `Save` button below, and then click your project name at top to return to the homepage.
+- Now you're all set and ready to go, to start labeling images!
+
+### Start labeling images
+- To label images is really simple one is all set up, you just click the first image at the list, and u will get into the labeling menu:
+<details>
+<summary> Click to see labeling menu screenshot </summary>
+ 
+ ![image](https://github.com/user-attachments/assets/f85097f3-4401-4664-9ee3-f4a087d673a8)
+
+</details>
+
+- Then you can zoom the image, or do whatever is necessary to be easier to select the areas to find in the image. At the following example using the button (`Accept Button` below or just key `1`, you will be able to select the Accept (Agree, Accept All, Acepto, ...) button of cookies)
+
+<details>
+<summary> Click to see the labeling of the Accept Button </summary>
+
+ ![image](https://github.com/user-attachments/assets/855eb3a1-033d-44a2-8bda-812255e48755)
+
+</details>
+
+- Same process to select the popup of the cookies. (`Cookie Popup` or key `2`, this is all the modal that contains all related to the cookies)
+
+<details>
+<summary> Click to see the labeling of the Cookie Popup </summary>
+
+![image](https://github.com/user-attachments/assets/2db8f238-ba3a-45f7-8e7e-d1f021bc1b35)
+
+</details>
+
+- (⚠️ **IMPORTANT**) **After making the needed labeling for the image, make sure at the right that the `Cookie Popup` element and the `Accept button`, are selecting the right element. (you can click them, to see that are selecting the right part of the image)**
+- Finally, click `Submit`, then u can jump to the next image at the left.
+- If the image doesn't contain any kind of cookie popup, or accept button related to the cookies, just click `Submit`
+
+<details>
+<summary> Click to see the Image example with out Cookies popup or accept related to cookies </summary>
+ 
+![image](https://github.com/user-attachments/assets/d9512d34-cf0e-4048-848f-f4081fd07c88)
+
+</details>
+
+```
+💡 NOTES:
+ - An image can contain the cookie popup and the accept button, but there can be cases that just the cookie popup is visible, in those just select the one visible.
+ - Is not needed that u need to perfectly select the box, but should make sense and wrap all the desired element closely enough.
+ - If part of any of the elements is not fully visible, just select the part that u know is from the element and is visible.
+ - There can be a maximum of only 1 for each of the labels per image.
+ - 😊 Any question just ask!
+```
+
+### Export the labeled images.
+- When you finish labeling all the images, go to the project menu (click your project name).
+- Click the `Export` button, and select `YOLO with Images` and click `Export` again.
+
+<details>
+<summary> Click to see the Export example of the labeled images </summary>
+ 
+![image](https://github.com/user-attachments/assets/16e05acc-326f-4234-aaaf-dd1a4f37f34b)
+
+</details>
+
+- This will download a `.zip` file, save it and wait for the instructions to send it.
